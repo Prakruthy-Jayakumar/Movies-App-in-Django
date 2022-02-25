@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Are you sure you want to delete this??
+    <input type="submit">
+
+</form>
+{% endblock %}
